@@ -14,6 +14,7 @@
 		34DA54EC1A20431000ED529F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34DA54EB1A20431000ED529F /* Images.xcassets */; };
 		34DA54EF1A20431000ED529F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34DA54ED1A20431000ED529F /* LaunchScreen.xib */; };
 		34DA54FB1A20431000ED529F /* Drawing_FunTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 34DA54FA1A20431000ED529F /* Drawing_FunTests.m */; };
+		34DA55061A2043E700ED529F /* Triangle.m in Sources */ = {isa = PBXBuildFile; fileRef = 34DA55051A2043E700ED529F /* Triangle.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		34DA54F41A20431000ED529F /* Drawing FunTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Drawing FunTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		34DA54F91A20431000ED529F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		34DA54FA1A20431000ED529F /* Drawing_FunTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Drawing_FunTests.m; sourceTree = "<group>"; };
+		34DA55041A2043E700ED529F /* Triangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Triangle.h; sourceTree = "<group>"; };
+		34DA55051A2043E700ED529F /* Triangle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Triangle.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +88,8 @@
 				34DA54E31A20431000ED529F /* AppDelegate.m */,
 				34DA54E51A20431000ED529F /* ViewController.h */,
 				34DA54E61A20431000ED529F /* ViewController.m */,
+				34DA55041A2043E700ED529F /* Triangle.h */,
+				34DA55051A2043E700ED529F /* Triangle.m */,
 				34DA54E81A20431000ED529F /* Main.storyboard */,
 				34DA54EB1A20431000ED529F /* Images.xcassets */,
 				34DA54ED1A20431000ED529F /* LaunchScreen.xib */,
@@ -222,6 +227,7 @@
 				34DA54E71A20431000ED529F /* ViewController.m in Sources */,
 				34DA54E41A20431000ED529F /* AppDelegate.m in Sources */,
 				34DA54E11A20431000ED529F /* main.m in Sources */,
+				34DA55061A2043E700ED529F /* Triangle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
