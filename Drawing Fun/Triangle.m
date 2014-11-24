@@ -44,6 +44,7 @@
     shape.fillColor = [UIColor clearColor].CGColor;
 
     [self.layer insertSublayer: shape atIndex:0];
+
 }
 
 
