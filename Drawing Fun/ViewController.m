@@ -120,6 +120,16 @@
     [path addLineToPoint:CGPointMake(100.0, 500.0)];
     [path addLineToPoint:CGPointMake(150.0, 500.0)];
     [path addLineToPoint:CGPointMake(155.0, 450.0)];
+    [path addLineToPoint:CGPointMake(155.0, 400.0)];
+    [path addLineToPoint:CGPointMake(160.0, 400.0)];
+    [path addLineToPoint:CGPointMake(160.0, 370.0)]; // point of building
+    [path addLineToPoint:CGPointMake(160.0, 400.0)];
+    [path addLineToPoint:CGPointMake(165.0, 400.0)];
+    [path addLineToPoint:CGPointMake(165.0, 450.0)];
+    [path addLineToPoint:CGPointMake(170.0, 500.0)]; // bottom of building
+
+    [path addLineToPoint:CGPointMake(225.0, 500.0)];
+    [path addLineToPoint:CGPointMake(225.0, 300.0)]; // up for new building
 
     CAShapeLayer *shapeLayer = [CAShapeLayer layer];
     shapeLayer.path = [path CGPath];
@@ -127,8 +137,6 @@
     shapeLayer.lineWidth = 3.0;
     shapeLayer.fillColor = [UIColor.clearColor CGColor];
     [self.view.layer addSublayer:shapeLayer];
-
-
 }
 
 - (void)didReceiveMemoryWarning {
