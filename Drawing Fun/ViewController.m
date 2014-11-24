@@ -17,7 +17,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-
+    // ***********************************************************
+    // ************ Code from Paint Code for Drawing Snoo *******
+    // ***********************************************************
+    /*
     //// Oval Drawing
     UIBezierPath* ovalPath = [UIBezierPath bezierPathWithOvalInRect: CGRectMake(64, 33, 120, 61)];
     [UIColor.blackColor setStroke];
@@ -114,6 +117,10 @@
     CAShapeLayer *ovalFour = [[CAShapeLayer alloc] init];
     [ovalFour setPath:oval4Path.CGPath];
     [self.view.layer addSublayer:ovalFour];
+     */
+    // ***********************************************************
+    // ************ End code from Paint Code for Drawing Snoo ***
+    // ***********************************************************
 
     UIBezierPath *path = [UIBezierPath bezierPath];
     [path moveToPoint:CGPointMake(100.0, 500.0)];
