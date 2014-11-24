@@ -138,11 +138,22 @@
     [path addLineToPoint:CGPointMake(225.0, 300.0)]; // up for new building
 
     CAShapeLayer *shapeLayer = [CAShapeLayer layer];
-    shapeLayer.path = [path CGPath];
-    shapeLayer.strokeColor = [UIColor.greenColor CGColor];
+    shapeLayer.path = path.CGPath;
+    shapeLayer.strokeColor = [UIColor greenColor].CGColor;
     shapeLayer.lineWidth = 3.0;
-    shapeLayer.fillColor = [UIColor.clearColor CGColor];
+    shapeLayer.fillColor = [UIColor clearColor].CGColor;
+
+    CABasicAnimation *drawAnimation = [CABasicAnimation animationWithKeyPath:@"strokeEnd"];
+    drawAnimation.duration = 1.0;
+    drawAnimation.fromValue = [NSNumber numberWithFloat:0.1f];
+    drawAnimation.toValue = [NSNumber numberWithFloat:1.0f];
+    drawAnimation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+    drawAnimation.removedOnCompletion = YES;
+
+    drawAnimation.repeatCount = 1;
+
     [self.view.layer addSublayer:shapeLayer];
+    [shapeLayer addAnimation:drawAnimation forKey:@"animateStroke"];
 }
 
 - (void)didReceiveMemoryWarning {
