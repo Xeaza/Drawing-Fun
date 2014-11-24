@@ -126,6 +126,7 @@
     [path moveToPoint:CGPointMake(100.0, 10.0)];
     [path addLineToPoint:CGPointMake(100.0, 500.0)];
     [path addLineToPoint:CGPointMake(150.0, 500.0)];
+    [path addLineToPoint:CGPointMake(155.0, 450.0)];
 
     CAShapeLayer *shapeLayer = [CAShapeLayer layer];
     shapeLayer.path = [path CGPath];
