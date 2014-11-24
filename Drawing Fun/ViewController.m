@@ -116,8 +116,7 @@
     [self.view.layer addSublayer:ovalFour];
 
     UIBezierPath *path = [UIBezierPath bezierPath];
-    [path moveToPoint:CGPointMake(100.0, 10.0)];
-    [path addLineToPoint:CGPointMake(100.0, 500.0)];
+    [path moveToPoint:CGPointMake(100.0, 500.0)];
     [path addLineToPoint:CGPointMake(150.0, 500.0)];
     [path addLineToPoint:CGPointMake(155.0, 450.0)];
     [path addLineToPoint:CGPointMake(155.0, 400.0)];
