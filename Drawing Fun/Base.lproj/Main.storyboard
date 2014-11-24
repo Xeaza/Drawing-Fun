@@ -17,18 +17,18 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j2c-X0-WvQ" customClass="Triangle">
-                                <rect key="frame" x="165" y="435" width="270" height="55"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <rect key="frame" x="165" y="525" width="270" height="55"/>
+                                <color key="backgroundColor" red="0.37700999149999997" green="0.1033678856" blue="0.45442708329999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="55" id="C3u-bN-7fc"/>
-                                    <constraint firstAttribute="width" constant="270" id="J8b-YD-Fcr"/>
+                                    <constraint firstAttribute="width" constant="270" id="W9E-LM-BTa"/>
+                                    <constraint firstAttribute="height" constant="55" id="kmB-wR-i8a"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.37700999149999997" green="0.1033678856" blue="0.45442708333333331" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="j2c-X0-WvQ" secondAttribute="centerX" id="gDF-hz-dIT"/>
-                            <constraint firstItem="j2c-X0-WvQ" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="415" id="xoh-Ii-tkg"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="j2c-X0-WvQ" secondAttribute="bottom" constant="20" id="XMn-3z-gZw"/>
+                            <constraint firstAttribute="centerX" secondItem="j2c-X0-WvQ" secondAttribute="centerX" id="f8Z-94-Jn5"/>
                         </constraints>
                     </view>
                 </viewController>
