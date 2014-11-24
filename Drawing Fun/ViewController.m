@@ -115,13 +115,6 @@
     [ovalFour setPath:oval4Path.CGPath];
     [self.view.layer addSublayer:ovalFour];
 
-    /*
-    CABasicAnimation *animateStrokeEnd = [CABasicAnimation animationWithKeyPath:@"strokeEnd"];
-    animateStrokeEnd.duration  = kAnimationDuration * ([fragment.value doubleValue] / [self.maxValue doubleValue]);
-    animateStrokeEnd.fromValue = [NSNumber numberWithFloat:0.0f];
-    animateStrokeEnd.toValue   = [NSNumber numberWithFloat:1.0f];
-    [progressLayer addAnimation:animateStrokeEnd forKey:nil]; */
-
     UIBezierPath *path = [UIBezierPath bezierPath];
     [path moveToPoint:CGPointMake(100.0, 10.0)];
     [path addLineToPoint:CGPointMake(100.0, 500.0)];
