@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 
+const static CGFloat kFullCircularRotation = M_PI * 2.0f;
+
 @interface ViewController ()
 
 @end
