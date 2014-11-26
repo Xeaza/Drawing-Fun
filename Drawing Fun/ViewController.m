@@ -8,9 +8,12 @@
 
 #import "ViewController.h"
 
-const static CGFloat kFullCircularRotation = M_PI * 2.0f;
+//const static CGFloat kFullCircularRotation = M_PI * 2.0f;
 
 @interface ViewController ()
+
+@property UIDynamicAnimator *animator;
+@property UIGravityBehavior *gravity;
 
 @end
 
@@ -57,6 +60,9 @@ const static CGFloat kFullCircularRotation = M_PI * 2.0f;
     circleLayer.fillColor = [UIColor clearColor].CGColor;
     circleLayer.strokeColor = [UIColor greenColor].CGColor;
     circleLayer.lineWidth = 3.0;
+    UIView *circle = [[UIView alloc] initWithFrame:circleLayer.frame];
+    circle.backgroundColor = [UIColor blueColor];
+    [self.view addSubview:circle];
 
     CABasicAnimation *rotateAnimation = [CABasicAnimation animationWithKeyPath:@"transform.rotation"];
     rotateAnimation.byValue = [NSNumber numberWithFloat:kFullCircularRotation];
@@ -73,6 +79,17 @@ const static CGFloat kFullCircularRotation = M_PI * 2.0f;
     [shapeLayer addAnimation:drawAnimation forKey:@"animateStroke"];
     [circleLayer addAnimation:rotateAnimation forKey:@"animateRotation"];
 
+    self.animator = [[UIDynamicAnimator alloc] initWithReferenceView:self.view];
+    self.gravity = [[UIGravityBehavior alloc] initWithItems:@[circle]];
+    //[self.animator addBehavior:self.gravity];
+
+    UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapMe:)];
+    [self.view addGestureRecognizer:tapGesture];
+}
+
+- (void)tapMe:(id)sender
+{
+    [self.animator addBehavior:self.gravity];
 }
 
 - (void)didReceiveMemoryWarning {
