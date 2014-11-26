@@ -45,13 +45,16 @@
 
     CABasicAnimation *drawAnimation = [CABasicAnimation animationWithKeyPath:@"strokeEnd"];
     drawAnimation.duration = 1.0;
-    drawAnimation.fromValue = [NSNumber numberWithFloat:0.1];
+    drawAnimation.fromValue = [NSNumber numberWithFloat:0.0];
     drawAnimation.toValue = [NSNumber numberWithFloat:1.0];
     drawAnimation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
     drawAnimation.removedOnCompletion = YES;
 
-    CGRect circleRect = CGRectMake(50, 50, 20, 20);
+    // ************************************************************
+    // ***************** Drawing circle ***************************
+    // ************************************************************
 
+    CGRect circleRect = CGRectMake(107.5, 140.0, 20, 20);
     UIBezierPath *circlePath = [UIBezierPath bezierPathWithRoundedRect:circleRect cornerRadius:CGRectGetWidth(circleRect) / 2.0];
 
     CAShapeLayer *circleLayer = [CAShapeLayer layer];
@@ -64,11 +67,11 @@
     circle.backgroundColor = [UIColor blueColor];
     [self.view addSubview:circle];
 
-    CABasicAnimation *rotateAnimation = [CABasicAnimation animationWithKeyPath:@"transform.rotation"];
-    rotateAnimation.byValue = [NSNumber numberWithFloat:kFullCircularRotation];
+
+    CABasicAnimation *rotateAnimation = [CABasicAnimation animationWithKeyPath:@"strokeEnd"];
     rotateAnimation.duration = 1.0;
     rotateAnimation.fromValue = [NSNumber numberWithFloat:0.0];
-    rotateAnimation.toValue = [NSNumber numberWithFloat:kFullCircularRotation];
+    rotateAnimation.toValue = [NSNumber numberWithFloat:1.0];
     rotateAnimation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
     rotateAnimation.removedOnCompletion = YES;
 
